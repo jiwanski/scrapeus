@@ -17,3 +17,7 @@ Automated tests with Python, pytest and Selenium.
 * `pytest`
 * `pytest -vv` more verbose
 * `pytest --setup-show` tracing fixtures
+
+## assertions
+
+Some tests verify randomized content and might fail, sometimes or almost always.
