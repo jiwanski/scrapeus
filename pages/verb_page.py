@@ -31,7 +31,6 @@ class VerbPage(BasePage):
         ele = self._driver.find_element(*self.PRINTER_BUTTON)
         ele.click()
         wh = self._driver.window_handles
-        print(wh)
         self._driver.switch_to.window(wh[-1])
         ele = self._driver.find_element(*self.BODY)
         atr = ele.get_attribute('onload')
@@ -51,7 +50,6 @@ class VerbPage(BasePage):
         wait.until(ec.number_of_windows_to_be(3))
         # number of windows == 3
         wh = self._driver.window_handles
-        print(wh)
         self._driver.switch_to.window(wh[1])
 
     def get_base_attribute(self) -> str:   # FIXME
